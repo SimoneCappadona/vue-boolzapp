@@ -4,45 +4,105 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(#009688 15%, #dbdbd2 15%);
+  font-family: "Lato", sans-serif;
+  word-break: break-all;
+  overflow: hidden;
 }
 
-img {
-  max-width: 100%;
+.chat-directory-bg {
+  background-color: #e6e6e6;
 }
 
-ul {
-  list-style: none;
+.pro-pic {
+  height: 40px;
 }
 
-li {
-  display: inline-block;
+.notifications {
+  background-color: #8cd7fa;
+}
+/* Icona campanella */
+.bell-icon {
+  background-color: #f0faff;
+  width: 50px;
+  height: 50px;
+  margin: 10px 5px;
+  aspect-ratio: 1;
+  cursor: pointer;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.input-group {
+  background-color: #f3f0f0;
 }
 
-/* utils */
-
-.container {
-  max-width: 1080px;
-  padding: 0 15px;
-  margin: 0 auto;
+.chat-thumb {
+  overflow: auto;
+  background: white;
+  height: 650px;
 }
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
+.chat-thumb-name {
+  font-size: medium;
+  font-weight: bold;
+}
+.chat-thumb-info-text {
+  font-size: smaller;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.chat-thumb-info-date {
+  font-size: x-small;
+  text-align: end;
+}
+.selected {
+  background-color: #f3f0f0;
+}
+/* Sezione chat */
+/* Nome contatto */
+.chat-name {
+  font-size: medium;
+}
+/* Info */
+.chat-info {
+  font-size: small;
 }
 
-/* debug */
+/* Chat Body */
+.chat-body {
+  background-image: url(../img/mine.jpg);
+  overflow-y: auto;
+  padding-bottom: 65px;
+  width: 100%;
+  height: 100%;
+}
+/* Messaggio */
+.message {
+  padding: 1px 3px 0px 1px;
+  max-width: 65%;
+  min-width: 30%;
+  max-height: fit-content;
+}
+/* Inviato */
+.sent {
+  background-color: #d2f5b9;
+}
+/* Ricevuto */
+.recived {
+  background-color: white;
+}
+/* testo messaggio */
+.message-text {
+  padding: 0px 5px 0px 3px;
+}
 
-.debug {
-  min-height: 80px;
-  background-color: #888;
-  padding: 2rem;
+/* Data messaggio */
+.message-date {
+  font-size: x-small;
+  text-align: end;
+}
+
+.new-message-section {
+  background-color: #f0ebe6;
+  width: 100%;
 }
